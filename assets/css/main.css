@@ -284,3 +284,106 @@ main {
   letter-spacing: 0.18em;
   color: #0f172a;
 }
+
+
+/* ================= DOMAIN LINK ================= */
+.domain-link {
+  text-decoration: none;
+  color: inherit;
+  display: inline-block;
+}
+
+
+/* Remove underline from domain links */
+.domain-link {
+  text-decoration: none;
+  color: inherit;
+  display: inline-block;
+}
+
+
+/* ================= DOMAIN CARD BASE ================= */
+.domain-card {
+  padding: 22px 28px;
+  border: 2px solid #0d1b2a;
+  border-radius: 14px;
+  background-color: #ffffff;
+  color: #0d1b2a;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  text-align: center;
+  cursor: pointer;
+
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease,
+    transform 0.25s ease,
+    box-shadow 0.25s ease,
+    border-color 0.3s ease;
+}
+
+/* ================= HOVER ================= */
+.domain-link:hover .domain-card {
+  background-color: #1e1e1e;
+  color: #ffffff;
+  border-color: #1e1e1e;
+  transform: translateY(-6px);
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25);
+}
+
+/* ================= CLICK (ACTIVE) ================= */
+.domain-link:active .domain-card {
+  background-color: #0f62fe;
+  color: #ffffff;
+  border-color: #0f62fe;
+  transform: translateY(0);
+  box-shadow: 0 8px 16px rgba(15, 98, 254, 0.4);
+}
+
+/* ================= KEYBOARD ACCESSIBILITY ================= */
+.domain-link:focus-visible .domain-card {
+  outline: none;
+  box-shadow: 0 0 0 4px rgba(15, 98, 254, 0.35);
+}
+
+/* ================= OPTIONAL CENTER CARD ================= */
+.domain-card.domain-center {
+  margin-top: 10px;
+}
+
+
+
+
+
+/* =========================================================
+   STRUCTURAL & THERMAL PAGE — COMPACT HERO
+   ========================================================= */
+
+.structural-page #hero {
+  height: 120px;              /* drastic reduction */
+  min-height: 120px;
+  border-radius: 28px;
+  margin-top: 20px;
+}
+
+/* Video should still fill the smaller hero */
+.structural-page .hero-video {
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Center title vertically in compact hero */
+.structural-page .hero-content {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Slightly smaller title for balance */
+.structural-page .hero-title {
+  font-size: 2.2rem;
+  letter-spacing: 0.12em;
+}
+
+
